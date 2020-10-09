@@ -1,0 +1,10 @@
+^C:\USERS\КИРИЛЛ\DESKTOP\LABA11\LABA1\MP2-LAB1-SET\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Кирилл/Desktop/LABA11/laba1/mp2-lab1-set -BC:/Users/Кирилл/Desktop/LABA11/laba1/build --check-stamp-file C:/Users/Кирилл/Desktop/LABA11/laba1/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

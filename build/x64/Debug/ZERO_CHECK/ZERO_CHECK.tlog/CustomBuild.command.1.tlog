@@ -1,0 +1,10 @@
+^C:\USERS\КИРИЛЛ\DESKTOP\LABA11\LABA1\BUILD\CMAKEFILES\B1D7ECE06EC238BEFE3CCA6E36B5624D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Кирилл/Desktop/LABA11/laba1/mp2-lab1-set -BC:/Users/Кирилл/Desktop/LABA11/laba1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Кирилл/Desktop/LABA11/laba1/build/set.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
